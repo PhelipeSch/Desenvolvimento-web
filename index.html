@@ -2,49 +2,39 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Execício HTML 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Tabela</title>
 </head>
 <body>
-    <h1><center> <img src= "logo.jpg" width = "110" height = "110" > <b>Café Starbuzz &reg;</b><center></h1>
-    <hr>
-   
-    <h2>Mistura da Casa - R$ 1,49</h2>
-    <img src ="cafe.jpg" width = "110" height = "110">
-    <p>Uma Mistura<b> suave e delicada</b> de cafés do México, Brasil e Bolívia</p>
-        <ul>
-            <font color = "red">Principais Ingredientes </font>
-            <li>Café conilon</li>
-            <li>Açúcar</li>
-        </ul>
-   
-    <h2> Café arábico <u> com leite</u> - R$ 2,89</h2>
-    <img src = "cafecomleite.jpg" width = "110" height = "110">
-    <p>Expresso, leite fervido e xarope de chocolate</p>
-    <ul type = "square">   
-        <font color = "red">Principais Ingradientes</font>
-        <li>Café Arábica</li>
-        <li>Chocolate</li>
-        <li>Leite</li>
-    <ol type="I">
-        <li>Integral</li>
-        <li>Desnatado</li>
-    </ol>  </ul>
-    
-    <h2>Cappucino - &euro; 3,17</h2>
-    <img src = "cappuccino.jpg" width = "110" height = "110">
-    <p>Uma mistura de expresso, leite fervido e espuma</p><br>
-    <a href="Cappuccino.html">Veja mais Informações</a>   
-   
-    <h2>Chá - &euro; <strike>1,85</strike><u> 1,45</u></h2>
-    <img src = "cha.jpg" width = "110" height = "110">
-    <p>Uma bebida condimentado com chá preto, especiarias</p>
-   
-    <a href = "#top">Voltar ao Topo</a><br>
+    <h1>Produtos</h1>
+    <table border="1" cellpadding="3">
+        <tr>
+            <th width="150">Código</th>
+            <th width ="150">Produto</th>
+            <th width ="150">Preço</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td>R$2.500,99</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Tablet</td>
+            <td>R$999,99</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <td colspan="2">cupom1 -R$ 10</td>
+        </tr>
+        <tr>
+            <td colspan="2">cupom2 -R$ 12</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td colspan="2">R$3.478,98</td>
+        </tr>
 
-    <a href = "https://twitter.com/?lang=pt-br" target = "_blank"> <img src ="Twitter_logo_2012.png"></a>
- 
-    <h3 align ="right"><b>Copyright 2023 Cafe Starbuzz <sup>&copy;</sup></b> </h3>
-
-
+    </table>
 </body>
 </html>
