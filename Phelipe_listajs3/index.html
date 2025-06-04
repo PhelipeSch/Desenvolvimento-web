@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 03</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="disciplina">Disciplina : Desenvolvimento Web II </h1>
+        <h1 class="titulo">Nome do estudante: Phelipe Eduardo Schmidt</h1>
+        <h1 class="titulo">Professor: Ernani Gottardo</h1>
+    </header>
+
+    <!-- Como percebi que poderia reutilizar a parte do HTML e CSS, acabei utilizando o formulário do Projeto do primeiro trimestre e toda a parte de estilização também.-->
+
+    <main>
+        <section class="atv" >
+            <h2 class="contatos-titulo">Exercício 1</h2>
+            <h2 class="contatos-subtitulo">Digite sua data de nascimento</h2>
+
+            <form id="formulario" class="formulario-1" onsubmit="ex1(event)">
+                <div class="grupo-form">
+                    <input type="date" class="text-form" id="data1">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado-1" class="resultado"></div>
+        </section>
+
+        <section class="atv" >
+            <h2 class="contatos-titulo">Exercício 2</h2>
+            <h2 class="contatos-subtitulo">Digite uma data e o número de semanas que deseja avançar</h2>
+
+            <form id="formulario" class="formulario-1" onsubmit="ex2(event)">
+                <div class="grupo-form">
+                    <input type="date" class="text-form" id="data2">
+                    <input type="number" placeholder="Número de semanas" class="text-form" id="semanas">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado-2" class="resultado"></div>
+        </section>
+        <script src="js/lista3.js"></script>
+    </main>
+</body>
+
+</html>
