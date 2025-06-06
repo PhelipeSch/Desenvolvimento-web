@@ -43,7 +43,7 @@ function ex1(event) {
     document.getElementById("resultado-1").innerHTML = texto;
 
 }
-//fim do primeiro exercício
+//Fim do primeiro exercício
 
 // Segundo exercício
 function ex2(event) {
@@ -72,27 +72,38 @@ function ex2(event) {
     for (let i = 0; i < tempo; i++) {
         if (data.getMonth() === 0 || data.getMonth() === 2 || data.getMonth() === 4 || data.getMonth() === 6 || data.getMonth() === 7 || data.getMonth() === 9 || data.getMonth() === 11) {
 
+            //Dezembro e 31
             if (data.getMonth() === 11 && data.getDate() === 31) {
+
                 data.setDate(1);
                 data.setMonth(0);
                 data.setFullYear(data.getFullYear() + 1);
             } else {
+                //Outro mês e 31
                 if (data.getDate() === 31) {
+
                     data.setDate(1);
                     data.setMonth(data.getMonth() + 1);
                 }
                 else {
+                    //Mês de 31 dias porém não é 31
                     data.setDate(data.getDate() + 1);
                 }
             }
         } else {
+            //Fevereiro
             if (data.getMonth() === 1) {
-                if (data.getDate() === 28) {
-                    data.setDate(1);
-                    data.setMonth(data.getMonth() + 1);
-                }
-                else {
-                    data.setDate(data.getDate() + 1);
+                //Ano bissexto
+                if ((data.getFullYear() % 4 === 0 && data.getFullYear() % 100 !== 0) || (data.getFullYear() % 400 === 0)) {
+                    //Fevereiro e 29
+                    if (data.getDate() === 29) {
+                        data.setDate(1);
+                        data.setMonth(data.getMonth() + 1);
+                    }
+                    //Fevereiro, ano bissexto e não é 29
+                    else {
+                        data.setDate(data.getDate() + 1);
+                    }
                 }
             } else {
                 if (data.getDate() === 30) {
@@ -110,3 +121,21 @@ function ex2(event) {
         }
     }
 }
+//Fim do segundo exercício
+
+// Terceiro exercício
+let vetor = new Array(6);
+
+for (let i = 0; i < vetor.length; i++) {
+
+    vetor[i] = Math.ceil(Math.random() * 60);
+
+    for (let j = 0; j < i; j++) {
+        if (vetor[i] === vetor[j]) {
+            vetor[i] = Math.ceil(Math.random() * 60);
+            j = -1;
+        }
+    }
+    document.getElementById(i).innerHTML += `${vetor[i]}`;
+}
+// Fim do terceiro exercício

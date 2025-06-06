@@ -22,13 +22,13 @@ body {
 }
 
 header {
-    background-color: var(--escuro);
+
     padding: 2rem;
     width: 100%;
     top: 0;
 }
 
-.atv{
+.atv {
     padding: 2rem 2rem 2rem 2rem;
 }
 
@@ -93,4 +93,18 @@ header {
 .resultado {
     margin-top: 20px;
     font-size: 1.2em;
+}
+
+table {
+    width: 40px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--claro);
 }
