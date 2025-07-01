@@ -40,10 +40,10 @@ mediaFinal.innerHTML = `<p>A média do estudante é: ${media.toFixed(1)}</p>`;
 
 if (media >= 7) {
     situacao.innerHTML = `<p>Aprovado!</p>`;
-    situacao.className = 'ap';
+    situacao.style.color='blue'
 } else {
     situacao.innerHTML = `<p>Reprovado!</p>`;
-    situacao.className = 'rp';
+    situacao.style.color = 'red';
 }
 //Fim do exercicio 02
 
@@ -69,5 +69,7 @@ lugar2.innerHTML += `<h2>Dia da semana: ${diaS}</h2>`;
 
 //Exercicio 05
 let p = document.getElementById('frase');
-p.className = 'destaque';
+p.style.color = 'red';
+p.style.backgroundColor = 'gray';
+p.style.fontWeight="bold";
 //Fim do exercicio 05
